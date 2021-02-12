@@ -54,7 +54,7 @@ class About extends Component {
                         <h2 className="blanco">Espol</h2>
                         <p className="blanco-light text-justify">Ahora estoy estudiando en una de las mejores universidades del pais que es la Escuela Superior Politécnica del Litoral. Estoy cursando la carrera de ingeniería en computación y ahora estoy en el 6to Semestre de la Carrera. También en esta universidad obtuve un certificado B2 de inglés de Cambridge.</p>
                         <div className="text-center blanco my-3">Porcentaje de Avance Carrera</div>
-                        <Progress animated color="danger" value="60">60%</Progress>
+                        <Progress animated color="danger" value="68">68%</Progress>
                     </Col>
                 </Row>
             </Container>
