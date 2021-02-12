@@ -1,0 +1,40 @@
+.formulario{
+    margin: 5% 20%;
+    padding: 3% 5%;
+    background-color: #161a1d;
+    border-radius: 10px;
+}
+@media only screen and (max-width: 992px) {
+    .formulario{
+        margin: 5% 5%;
+        padding: 3% 5%;
+        background-color: #161a1d;
+        border-radius: 10px;
+    }
+
+}
+.swal-button{
+    background-color:#E5383B;
+    border-radius: 10px;
+    border: 2px solid #E5383B;  
+}
+.swal-button:hover{
+    background-color: #161A1D;
+    border: 2px solid #E5383B;    
+}
+.swal-button--confirm:hover{
+    background-color: #161A1D;
+    border: 2px solid #E5383B;    
+}
+.swal-modal{
+    background-color: #161A1D;
+
+}
+.swal-text{
+    color: white;
+    font-weight: bold;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+}

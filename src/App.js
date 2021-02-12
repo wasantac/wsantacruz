@@ -1,24 +1,45 @@
-import logo from './logo.svg';
 import './App.css';
-
+import Landing from './Components/Landing'
+import {BrowserRouter as Router,
+Switch,Route} from 'react-router-dom';
+import Navegacion from './Components/Navegacion';
+import Loader from './Components/Loader';
+import Pie from './Components/Pie';
+import Contacto from './Components/Contacto';
+import About from './Components/About';
+import Portafolio from './Components/Portafolio';
 function App() {
+  document.title = "Walter Santacruz"
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router >
+      <div>
+       <Loader />
+        <Navegacion />
+        <Switch>
+          <Route path="/" exact>
+            <div className="App">
+              <Landing />
+            </div>
+          </Route>
+          <Route path="/about">
+            <div>
+              <About />
+            </div>
+          </Route>
+          <Route path="/contacto">
+            <div>
+              <Contacto />
+            </div>
+          </Route>
+          <Route path="/portafolio">
+            <Portafolio></Portafolio>
+          </Route>
+        </Switch>
+        <Pie />
+      </div>
+    </Router>
+
   );
 }
 

@@ -1,0 +1,18 @@
+.icono{
+    height: 40px;
+    transform: scale(1.2);
+}
+.fondo{
+    background-color: #161a1d;
+    padding: 3% 3%;
+    border-radius: 10px;
+}
+@media only screen and (max-width: 992px) {
+    .fondo{
+        margin: 2% !important;
+    }
+    #experiencia{
+        padding: 0 !important;
+    }
+
+  }

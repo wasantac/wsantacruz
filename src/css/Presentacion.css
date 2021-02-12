@@ -1,0 +1,24 @@
+#walter{
+    width: 50%;
+}
+
+.blanco{
+    color: white;
+    font-weight: bold;
+}
+.blanco-light{
+    color: white;
+    font-weight: lighter;
+}
+
+
+@media only screen and (max-width: 600px) {
+    #walter{
+        width: 80%;
+    }
+    .blanco,.blanco-light{
+        text-align: center;
+    }
+  }
+
+  

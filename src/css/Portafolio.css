@@ -1,0 +1,24 @@
+.proyecto:hover{
+    animation: 0.5s incremento ease;
+    transform: scale(1.05);
+}
+.proyecto{
+    animation: 0.5s decremento ease;
+}
+
+@keyframes incremento{
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1.05);
+    }
+}
+@keyframes decremento{
+    0%{
+        transform: scale(1.05);
+    }
+    100%{
+        transform: scale(1);
+    }
+}

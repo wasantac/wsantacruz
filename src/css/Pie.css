@@ -1,0 +1,29 @@
+.pie{
+    position: absolute;
+    bottom: 0;
+    /* Set the fixed height of the footer here */
+    background-color: #161A1D;
+}
+h4,p.copyright{
+    
+    text-align: center;
+}
+
+h4 svg{
+    color: white;
+    display: inline-block;
+    margin: 0px 10px;
+}
+
+h4 svg:hover{
+    color: #E5383B;
+    transform: scale(1.2);
+}
+p a:active{
+    color: #E5383B;
+    transform: scale(1.2);
+}
+p a:hover{
+    color: #E5383B;
+    text-decoration: none;
+}

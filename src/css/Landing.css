@@ -1,0 +1,73 @@
+
+.contacto{
+    background-color:#E5383B;
+    border-radius: 10px;
+    border: 2px solid #E5383B;    
+}
+
+.contacto span{
+    text-align: center;
+    justify-content: center;
+}
+
+.contacto:hover{
+    background-color: transparent;
+    border: 2px solid #E5383B;    
+}
+
+.blanco span{
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    justify-content: center;
+}
+
+.borde{
+    border-radius: 10px;
+    border: 2px solid transparent;    
+}
+.borde:hover{
+    border-radius: 10px;
+    border: 2px solid #E5383B;    
+}
+
+
+.negro{
+    background:linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(1,9,10,0.8) 62%);
+}
+
+.logo{
+    margin-left: 10%;
+    width: 48px;
+}
+.borde:active{
+    animation: push 0.3s linear 1;
+}
+@keyframes push{
+    50%  {transform: scale(0.8);}
+
+
+}
+#fuente{
+    margin-bottom: 200px;
+}
+.logo:hover{
+    animation: shake 1s;
+
+    /* When the animation is finished, start again */
+    animation-iteration-count: infinite;
+
+}
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
