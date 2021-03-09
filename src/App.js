@@ -47,6 +47,12 @@ function App() {
           <Route path="/nsfw">
             <Sorpresa></Sorpresa>
           </Route>
+          <Route path="*">
+            <div className="wrp" >
+            <p className="blanco grande">404</p>
+            <p className="blanco mediano font-weight-light">Aqui no hay nada :(</p>
+            </div>
+          </Route>
         </Switch>
         
       </div>

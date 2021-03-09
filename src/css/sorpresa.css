@@ -25,17 +25,7 @@ button.sorpresa{
 
     animation: fadein 5s ease;
 }
-.segundoFondo{
-    position: absolute;
-    width: 95%;
-    height: 95%;
-    top: 2.5%;
-    left: 2.5%;
-    z-index: -1;
-}
-.arriba{
-    z-index: 999;
-}
+
 @keyframes invertir{
     0%{
         -webkit-animation-timing-function: steps(1, end);

@@ -24,7 +24,21 @@
     animation: loader 2s linear infinite;
   }
   
-  
+  .wrp {
+    width: 100%;
+    height: 100vh;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .grande{
+    font-size: 100px;
+  }
+  .mediano{
+    font-size: 50px;
+  }
   
   @keyframes loader{
     0%{
