@@ -5,6 +5,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: row;
   }
 .sorpresa{
     width: 150px;
@@ -16,6 +17,9 @@ button.sorpresa{
 }
 .cheems{
     animation: invertir 0.5s  infinite;
+}
+.cheemsPeque{
+    animation: invertir 0.5s linear infinite;
 }
 @keyframes invertir{
     0%{
@@ -44,3 +48,4 @@ button.sorpresa{
     }
 
 }
+
