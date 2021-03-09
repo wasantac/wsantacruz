@@ -3,33 +3,34 @@ import '../css/sorpresa.css'
 import {Row,Container,Col} from 'reactstrap';
 const Sorpresa = () => {
     let [show,setShow] = useState(true);
+    let [color,setColor] = useState("white");
+    let [colorTwo,setColorTwo] = useState("white");
     let audio = new Audio("2 UNLIMITED - Get Ready For This (Official Music Video).mp3");
-    const colors = [
-        'white',
-        'black',
-        'blue',
-        'green',
-        'pink',
-        'red',
-        'purple',
-        'yellow',
-        'gray',
-        'lilac',
-      ];
-      const [value, setValue] = React.useState(0);
+
+      let getRandomColor = () => {
+        var letters = '0123456789ABCDEF';
+        var color = '#';
+        for (var i = 0; i < 6; i++) {
+          color += letters[Math.floor(Math.random() * 16)];
+        }
+        return color;
+      }
+      
 
       React.useEffect(() => {
         setInterval(() => {
-            setValue((v) => (v === 9 ? 0 : v + 1));
+            setColor(getRandomColor());
+            setColorTwo(getRandomColor());
         }, 500);
       }, []);
     return (
-        <div id="wrapper" style={show ? {backgroundColor:"transparent"}:{backgroundColor: colors[value]}}>
+        
+        <div id="wrapper" style={show ? {backgroundColor:"transparent"}:{backgroundColor: color,borderColor: colorTwo,borderWidth: 25} }>
             {show ? <button className="sorpresa contacto mx-2 text-center blanco borde pulsar" onClick={e => {
                 setShow(!show)
                 audio.play();
             }}>Confía bb</button> : 
-            <Container>
+            <Container className="aparecer m-5">
             <Row className="align-items-center justify-content-center">  
                 <Col className="d-flex justify-content-center">
                 <img src={process.env.PUBLIC_URL + '/cheems.png'} alt="cheems" width="auto" height="200px"
