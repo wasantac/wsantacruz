@@ -16,11 +16,15 @@ const Portafolio = () => {
                 </Col>
                 <Col className="my-2 rounded proyecto" sm="4">
                     <img src="/assets/img/urbazapp.png" alt="Waltmaysa" className="img-fluid rounded "></img>
-                </Col>         
+                </Col>
+                <Col className="my-2 rounded proyecto" sm="4">
+                    <img src="/assets/img/RussoStore.png" alt="Waltmaysa" className="img-fluid rounded "></img>
+                </Col>            
             </Row>
-            <Jumbotron className="bg-transparent p-4">
+            <Jumbotron className="bg-transparent p-4  mb-5">
                 <hr className="my-2 bg-danger" />
                 <p className="lead text-white mb-5">Ayúdame a llenar esta página con más proyectos!</p>
+                <hr className="my-2 bg-danger" />
             </Jumbotron>
             
         </div>
