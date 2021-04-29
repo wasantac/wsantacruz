@@ -1,0 +1,9 @@
+.letra-color{
+    z-index: 999;
+    transition: 2s linear !important;
+}
+.letra-color:hover{
+    font-weight: bold;
+    color: red;
+    transition: 0.1s linear !important;
+}
