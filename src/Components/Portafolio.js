@@ -10,15 +10,15 @@ const Portafolio = () => {
                 <hr className="bg-danger" />
             </Jumbotron>
             
-            <Row className="mx-1">
+            <Row className="mx-1 overflow-hidden">
                 <Col className="my-2 rounded proyecto" sm="4">
-                    <img src="/assets/img/Waltmaysa.png" alt="Waltmaysa" className="img-fluid rounded "></img>
+                    <img src="https://baxpidan.sirv.com/portfolio/Waltmaysa.png" alt="Waltmaysa" className="img-fluid rounded "></img>
                 </Col>
                 <Col className="my-2 rounded proyecto" sm="4">
-                    <img src="/assets/img/urbazapp.png" alt="Waltmaysa" className="img-fluid rounded "></img>
+                    <img src="https://baxpidan.sirv.com/portfolio/urbazapp.png" alt="Waltmaysa" className="img-fluid rounded "></img>
                 </Col>
                 <Col className="my-2 rounded proyecto" sm="4">
-                    <img src="/assets/img/RussoStore.png" alt="Waltmaysa" className="img-fluid rounded "></img>
+                    <img src="https://baxpidan.sirv.com/portfolio/RussoStore.png" alt="Waltmaysa" className="img-fluid rounded "></img>
                 </Col>            
             </Row>
             <Jumbotron className="bg-transparent p-4  mb-5">

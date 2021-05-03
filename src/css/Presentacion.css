@@ -21,4 +21,6 @@
     }
   }
 
-  
+.agrandar-box{
+    transform: scale(1.3);
+}

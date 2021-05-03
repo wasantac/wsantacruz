@@ -16,7 +16,13 @@
     }
 
   }
+
+.agrandar{
+    transform: scale(1);   
+    transition: 0.3s linear; 
+}
 .agrandar:hover{
     transform: scale(1.1);   
     transition: 0.3s linear; 
+    cursor: default;
 }

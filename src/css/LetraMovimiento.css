@@ -6,4 +6,5 @@
     font-weight: bold;
     color: red;
     transition: 0.1s linear !important;
+    cursor:default;
 }

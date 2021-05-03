@@ -9,7 +9,7 @@ class Presentacion extends Component {
             <div className="mx-auto px-auto my-5 justify-content-center">
                 <Container >
                     <Row  className="align-items-center">
-                        <div className="justify-content-center align-middle col "> 
+                        <div className="justify-content-center align-middle col"> 
                             <h1 className="blanco">
                                 <LetraMovimiento texto="Hola, soy"></LetraMovimiento>
                             </h1>
