@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import '../css/sorpresa.css'
 import {Row,Container,Col} from 'reactstrap';
+
+
 const Sorpresa = () => {
     let [show,setShow] = useState(true);
     let [color,setColor] = useState("white");
@@ -31,18 +33,19 @@ const Sorpresa = () => {
                 audio.play();
             }}>Confía bb</button> : 
             <Container className="aparecer m-5">
+            
             <Row className="align-items-center justify-content-center">  
                 <Col className="d-flex justify-content-center">
-                <img src={process.env.PUBLIC_URL + '/cheems.png'} alt="cheems" width="auto" height="200px"
+                <img src="https://baxpidan.sirv.com/portfolio/Daco_4062401%20(1)%20(1).png" alt="cheems" width="auto" height="200px"
                 className="cheemsPeque"></img>               
                 </Col>  
 
                 <Col className="d-flex justify-content-center">                
-                <img src={process.env.PUBLIC_URL + '/cheems.png'} alt="cheems" width="auto" height="400px"
+                <img src="https://baxpidan.sirv.com/portfolio/Daco_4062401%20(1)%20(1).png" alt="cheems" width="auto" height="400px"
                 className="cheems"></img>
                 </Col>
                 <Col className="d-flex justify-content-center">                
-                <img src={process.env.PUBLIC_URL + '/cheems.png'} alt="cheems" width="auto" height="200px"
+                <img src="https://baxpidan.sirv.com/portfolio/Daco_4062401%20(1)%20(1).png" alt="cheems" width="auto" height="200px"
                 className="cheemsPeque"></img>
                 </Col>
             </Row>

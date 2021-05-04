@@ -16,10 +16,10 @@ button.sorpresa{
     outline: none;
 }
 .cheems{
-    animation: invertir 0.5s  infinite;
+    animation: invertir 1s  infinite;
 }
 .cheemsPeque{
-    animation: invertir 0.5s linear infinite;
+    animation: invertir 1s linear infinite;
 }
 .aparecer{
 
