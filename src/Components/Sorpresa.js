@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import '../css/sorpresa.css'
 import {Row,Container,Col} from 'reactstrap';
 
-
 const Sorpresa = () => {
+  
     let [show,setShow] = useState(true);
     let [color,setColor] = useState("white");
     let [colorTwo,setColorTwo] = useState("white");

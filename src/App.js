@@ -16,7 +16,7 @@ function App() {
     hidden: {y:50,opacity: 0},
   }
   return (
-    <AnimatePresence>
+    <AnimatePresence >
       <Router >
           <Switch>
             <Route path="/" exact>
@@ -56,8 +56,9 @@ function App() {
             </Route>
             <Route path="*">
               <div className="wrp" >
-              <p className="blanco grande">404</p>
-              <p className="blanco mediano font-weight-light">Aqui no hay nada :(</p>
+              <p className="blanco colosal">404</p>
+              <p className="blanco mitad font-weight-light">Aqui no hay nada :(</p>
+              <a href="/" className="mx-2 p-3 blanco text-center borde contacto"><span>Regresar al inicio</span></a>
               </div>
             </Route>
           </Switch>

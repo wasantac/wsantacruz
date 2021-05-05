@@ -21,9 +21,9 @@ const LetraMovimiento = ({texto}) => {
 
     return (
         <>
-            {!load ? <></> : spanList.map(item => {
+            {!load ? <></> : spanList.map((item,i) => {
                 return(                
-                <span className="letra-color">
+                <span className="letra-color" key={i}>
                     {item}
                 </span>)
             })}
