@@ -50,9 +50,9 @@ let Contacto = () =>{
                 <h1 className="text-white">Links de Contacto</h1>
                 <hr className="bg-danger"></hr>
                 <ul>
-                    <li className="text-white d-flex align-items-center"><ImWhatsapp />Whatsapp: <a href="https://wa.me/+593983313553" className="text-danger">+593983313553</a></li>
-                    <li className="text-white d-flex align-items-center"><FaFacebook />Facebook: <a href="https://www.facebook.com/skyshot12349" className="text-danger">Walter Santacruz</a></li>
-                    <li className="text-white d-flex align-items-center"><FiInstagram />Instagram: <a href="https://www.instagram.com/walter12349/" className="text-danger">@walter12349</a></li>
+                    <li className="text-white d-flex align-items-center justify-content-center"><ImWhatsapp className="mx-2" />Whatsapp: <a href="https://wa.me/+593983313553" className="text-danger mx-2">+593983313553</a></li>
+                    <li className="text-white d-flex align-items-center justify-content-center"><FaFacebook className="mx-2" />Facebook: <a href="https://www.facebook.com/skyshot12349" className="text-danger mx-2">Walter Santacruz</a></li>
+                    <li className="text-white d-flex align-items-center justify-content-center"><FiInstagram className="mx-2"/>Instagram: <a href="https://www.instagram.com/walter12349/" className="text-danger mx-2">@walter12349</a></li>
                 </ul>
             </div>
         </Container>
