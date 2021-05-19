@@ -40,7 +40,7 @@ const About = () => {
             Soy una persona muy proactiva,muy divertido (Siempre Facha) y un
             gran líder cuando se lo requiere. Me gusta mucho la programación y
             ahora estoy emprendiendo nuevos retos desde que aprendí a programar
-            en web framworks para hacer páginas web. Me gusta mucho el anime
+            en web frameworks para hacer páginas web. Me gusta mucho el anime
             siendo mi favorito Jojo's Bizzarre Adventure y también me gusta
             armar cubos de rubik.
           </p>
