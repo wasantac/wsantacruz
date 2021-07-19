@@ -4,7 +4,7 @@ import '../css/Portafolio.css'
 import {motion} from 'framer-motion';
 
 const Portafolio = () => {
-    const fotos = ["https://baxpidan.sirv.com/portfolio/Waltmaysa.png","https://baxpidan.sirv.com/portfolio/urbazapp.png","https://baxpidan.sirv.com/portfolio/RussoStore.png" ]
+    const fotos = ["https://baxpidan.sirv.com/portfolio/Waltmaysa.png","https://baxpidan.sirv.com/portfolio/urbazapp.png","https://baxpidan.sirv.com/portfolio/RussoStore.png","https://baxpidan.sirv.com/portfolio/593timer.png" ]
     const container = {
         hidden: { opacity: 1, scale: 0,
           transition: {

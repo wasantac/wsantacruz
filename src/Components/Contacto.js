@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, Form, FormGroup, Label, Input,Container} from 'reactstrap';
+import { Button, Form, FormGroup, Label, Input,Container,Row,Col} from 'reactstrap';
 import '../css/Contacto.css'
 import emailjs from 'emailjs-com'
 import swal from 'sweetalert';
@@ -21,9 +21,10 @@ function sendEmail(e) {
 let Contacto = () =>{
     return (
         <Container className="pb-5 mb-5">
-            
+            <Row className="mb-5">
+            <Col sm="8">
             <Form className="formulario"  onSubmit={sendEmail}>
-            <h1 className="text-white">Contacto</h1>
+            <h1 className="text-white text-center">Contacto</h1>
             <hr className="bg-danger"></hr>
                 <FormGroup>
                     <Label for="nombre" className="blanco">Nombre:</Label>
@@ -46,8 +47,10 @@ let Contacto = () =>{
                 </div>
             </Form>
 
-            <div className="formulario mb-5">
-                <h1 className="text-white">Links de Contacto</h1>
+            </Col>
+            <Col sm="4">
+            <div className="formulario">
+                <h1 className="text-white text-center">Links de Contacto</h1>
                 <hr className="bg-danger"></hr>
                 <ul>
                     <li className="text-white d-flex align-items-center justify-content-center"><ImWhatsapp className="mx-2" />Whatsapp: <a href="https://wa.me/+593983313553" className="text-danger mx-2">+593983313553</a></li>
@@ -55,6 +58,12 @@ let Contacto = () =>{
                     <li className="text-white d-flex align-items-center justify-content-center"><FiInstagram className="mx-2"/>Instagram: <a href="https://www.instagram.com/walter12349/" className="text-danger mx-2">@walter12349</a></li>
                 </ul>
             </div>
+                
+            </Col>
+
+
+
+            </Row>
         </Container>
     );
 }
