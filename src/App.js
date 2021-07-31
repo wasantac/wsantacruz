@@ -9,6 +9,7 @@ import About from './Components/About';
 import Portafolio from './Components/Portafolio';
 import Sorpresa from './Components/Sorpresa';
 import {AnimatePresence,motion} from 'framer-motion';
+import Movingbg from './Components/Movingbg';
 function App() {
   document.title = "Walter Santacruz"
   const variants = {
@@ -17,6 +18,7 @@ function App() {
   }
   return (
     <AnimatePresence >
+      <Movingbg/>
       <Router >
           <Switch>
             <Route path="/" exact>

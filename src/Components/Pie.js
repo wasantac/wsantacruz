@@ -14,7 +14,6 @@ class Pie extends Component {
                             <a href="https://www.fiverr.com/share/rxxW2N"><SiFiverr /></a>
                             <a href="https://www.instagram.com/walter12349/"><FiInstagram /></a>
                         </h4>
-                        <p className="copyright"><a href="https://bgjar.com/" className="blanco copyright">Fondo proporcionado por: bgjar</a></p>
                     </Col>                    
                     
                 </Row>

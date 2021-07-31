@@ -3,7 +3,7 @@ import {Row,Col,Container} from 'reactstrap';
 import '../css/Estadisticas.css'
 import LetraMovimiento from './LetraMovimiento';
 let Estadisticas =  () => {
-    let lista = ["Python","Java","MYSQL","MongoDB","JavaScript","CSS","HTML","REACT.JS","Express.JS","MERN STACK"]
+    let lista = ["Python","Java","MYSQL","MongoDB","JavaScript","CSS","HTML","REACT.JS","Express.JS","MERN STACK","Angular CLI","SCSS"]
     let texto = "                        He trabajado con algunos lenguajes de programación empezando con python, siguiendo con Java y ahora trabajo en desarrollo de paginas web. Tengo también conocimientos en desarrollo de bases de datos por lo que pueden ser implementadas en los servicios que ofrezco. Por ahora no he trabajado en ninguna empresa ya que soy estudiante de ingeniería en computación de la espol pero hago servicios de freelancer en fiverr."
     return (
         <Container>
@@ -22,8 +22,8 @@ let Estadisticas =  () => {
                         <LetraMovimiento texto="Conocimientos Sobre:"></LetraMovimiento>
                     </h2>
                     <div className="d-flex flex-wrap align-items-center">
-                        {lista.map((item) => {
-                            return <p className="m-1 py-1 px-2 bg-danger text-white rounded shadow-sm agrandar" key={item}>{item}</p>
+                        {lista.map((item,key) => {
+                            return <p className="m-1 py-1 px-2 bg-danger text-white rounded shadow-sm agrandar" key={`estadisticas${key}`}>{item}</p>
                         })}
                     </div>
              
