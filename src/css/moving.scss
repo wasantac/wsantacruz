@@ -9,8 +9,8 @@ $red : #8b2427;
     @for $i from 0 through 100{
         $top: percentage(random(100)/100);
         $left: percentage(random(100)/100);
-        $x: random(300) + px;
-        $y:  random(300) + px;
+        $x: (random(600) - 300) + px;
+        $y:  (random(600) - 300) + px;
         $time : (random(50) + 50) + s;
         .circle:nth-child(#{$i}){
             top: $top;
