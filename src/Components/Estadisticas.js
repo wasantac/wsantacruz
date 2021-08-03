@@ -4,7 +4,7 @@ import '../css/Estadisticas.css'
 import LetraMovimiento from './LetraMovimiento';
 let Estadisticas =  () => {
     let lista = ["Python","Java","MYSQL","MongoDB","JavaScript","CSS","HTML","REACT.JS","Express.JS","MERN STACK","Angular CLI","SCSS"]
-    let texto = "                        He trabajado con algunos lenguajes de programación empezando con python, siguiendo con Java y ahora trabajo en desarrollo de paginas web. Tengo también conocimientos en desarrollo de bases de datos por lo que pueden ser implementadas en los servicios que ofrezco. Por ahora no he trabajado en ninguna empresa ya que soy estudiante de ingeniería en computación de la espol pero hago servicios de freelancer en fiverr."
+    let texto = "He trabajado con algunos lenguajes de programación como python y Java realizando proyectos sencillos en consola o interfaz gráfica. Tengo también conocimientos en desarrollo de bases de datos por lo que pueden ser implementadas en los servicios que ofrezco. Por otra parte mi experiencia se centra más en el desarrollo de sitios web (Aproximadamente 1 año) utlizando frameworks como react o angular. Para estos sitios me gusta utilizar plantillas de bootstrap combinandola con mis propios estilos en css o scss para darle una mejor presentación."
     return (
         <Container>
             <h1 className="blanco my-4">

@@ -4,7 +4,29 @@ import '../css/Portafolio.css'
 import {motion} from 'framer-motion';
 
 const Portafolio = () => {
-    const fotos = ["https://baxpidan.sirv.com/portfolio/Waltmaysa.png","https://baxpidan.sirv.com/portfolio/urbazapp.png","https://baxpidan.sirv.com/portfolio/RussoStore.png","https://baxpidan.sirv.com/portfolio/593timer.png" ]
+    const fotos = [
+      {
+        url : "https://russostore.netlify.app/",
+        img : "https://baxpidan.sirv.com/portfolio/RussoStore.png",
+
+      },
+      {
+        url : "http://urbazapp-app.ing-soft2021.com/",
+        img : "https://baxpidan.sirv.com/portfolio/urbazapp.png",
+      },
+      {
+        url: "https://593timer.netlify.app/",
+        img: "https://baxpidan.sirv.com/portfolio/593timer.png" ,
+      }
+      ,{
+        url : "https://porfiapp.netlify.app/",
+        img : "https://baxpidan.sirv.com/portfolio/porfiapp.png"
+      },{
+        url: "https://marcador593.netlify.app/",
+        img : "https://baxpidan.sirv.com/portfolio/realtime.png",
+      }
+    ]
+
     const container = {
         hidden: { opacity: 1, scale: 0,
           transition: {
@@ -48,7 +70,9 @@ const Portafolio = () => {
                         fotos.map((item,i)=>{ 
                           return(
                             <Col className="my-2 rounded proyecto" sm="6" key={i}>
-                            <motion.img  custom={i} variants={itemMov} src={item} alt="proyecto" className="img-fluid rounded "></motion.img>
+                            <a href={item.url}>
+                            <motion.img  custom={i} variants={itemMov} src={item.img} alt="proyecto" className="img-fluid rounded "></motion.img>
+                            </a>
                             </Col>
                           );
                         })                        
