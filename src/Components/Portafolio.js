@@ -1,5 +1,5 @@
 import React from 'react';
-import { Jumbotron,Row,Col,Container } from 'reactstrap';
+import { Jumbotron,Row,Col } from 'reactstrap';
 import '../css/Portafolio.css'
 import {motion} from 'framer-motion';
 
@@ -8,22 +8,27 @@ const Portafolio = () => {
       {
         url : "https://russostore.netlify.app/",
         img : "https://baxpidan.sirv.com/portfolio/RussoStore.png",
+        titulo : "Russo Store",
 
       },
       {
         url : "http://urbazapp-app.ing-soft2021.com/",
         img : "https://baxpidan.sirv.com/portfolio/urbazapp.png",
+        titulo : "Urbazapp",
       },
       {
         url: "https://593timer.netlify.app/",
         img: "https://baxpidan.sirv.com/portfolio/593timer.png" ,
+        titulo : "Timer 593",
       }
       ,{
         url : "https://porfiapp.netlify.app/",
-        img : "https://baxpidan.sirv.com/portfolio/porfiapp.png"
+        img : "https://baxpidan.sirv.com/portfolio/porfiapp.png",
+        titulo : "Porfi App",
       },{
         url: "https://marcador593.netlify.app/",
         img : "https://baxpidan.sirv.com/portfolio/realtime.png",
+        titulo : "Marcador 593",
       }
     ]
 
@@ -64,21 +69,24 @@ const Portafolio = () => {
                 <p className="lead text-white text-center">Aquí los proyectos en los que he trabajado.</p>
             </Jumbotron>  
             <motion.div animate="visible" initial="hidden" variants={container}>   
-                <Container className="fondoProyecto">
+                <div className="fondoProyecto">
                     <Row className="mx-1 overflow-hidden">
                         {
                         fotos.map((item,i)=>{ 
                           return(
-                            <Col className="my-2 rounded proyecto" sm="6" key={i}>
-                            <a href={item.url}>
-                            <motion.img  custom={i} variants={itemMov} src={item.img} alt="proyecto" className="img-fluid rounded "></motion.img>
-                            </a>
+                            <Col className="rounded proyecto p-0" sm="4" key={i}>
+                              <a href={item.url}>
+                              <div className="text-titulo">
+                                <h1 className="text-right titulo-abs">{item.titulo}</h1>
+                              </div>
+                              <motion.img  custom={i} variants={itemMov} src={item.img} alt="proyecto" className="imagenfit"></motion.img>
+                              </a>
                             </Col>
                           );
                         })                        
                         }         
                     </Row>
-                </Container>
+                </div>
             </motion.div>
             <Jumbotron className="bg-transparent p-4 espaciado">
                 <p className="lead text-white mb-5 text-center" >Ayúdame a llenar esta página con más proyectos!</p>

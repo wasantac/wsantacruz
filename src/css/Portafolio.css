@@ -1,9 +1,24 @@
-.proyecto:hover{
-    animation: 0.5s incremento ease;
-    transform: scale(1.02);
+
+.imagenfit{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
 }
-.proyecto{
-    animation: 0.5s decremento ease;
+.text-titulo {
+    background-color: rgba(0,0,0,0.4);
+    position : absolute;
+    width : 100%;
+    height : 100%;
+    color :white;
+}
+.text-titulo:hover{
+    background-color: rgba(0,0,0,0);
+    color : rgba(0,0,0,0);
+}
+.titulo-abs{
+    position : absolute;
+    bottom : 0%;
+    right: 5%;
 }
 
 @keyframes incremento{
