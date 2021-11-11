@@ -1,12 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 import { Container, Col, Row, Table, Progress } from "reactstrap";
 import "../css/About.css";
 const About = () => {
+  const [value, setValue] = useState(0)
+  setTimeout(() => {
+    if (value < 80) {
+      setValue(value + 1)
+    }
+
+  }, 50)
   return (
     <Container id="contenedor">
       <Row className="align-items-top">
         <Col sm="6">
-          <Table borderless className="tabla  w-100">
+          <Table borderless className="tabla w-100">
             <thead>
               <tr>
                 <th id="titulo" colSpan="2">
@@ -16,20 +23,24 @@ const About = () => {
             </thead>
             <tbody>
               <tr>
-                <td>Nombres:</td>
-                <td>Walter Alfredo</td>
+                <td className="align-middle">Nombres:</td>
+                <td className="align-middle">Walter Alfredo</td>
               </tr>
               <tr>
-                <td>Apellidos:</td>
-                <td>Santacruz Astudillo</td>
+                <td className="align-middle">Apellidos:</td>
+                <td className="align-middle">Santacruz Astudillo</td>
               </tr>
               <tr>
-                <td>Lugar y Fecha de Nacimiento:</td>
-                <td>Guayaquil, 03 de Marzo de 1999</td>
+                <td className="align-middle">Fecha de Nacimiento:</td>
+                <td className="align-middle">03 de Marzo de 1999</td>
               </tr>
               <tr>
-                <td>Correos:</td>
-                <td>wasantac12349@gmail.com waltersantacruz@hotmail.es</td>
+                <td className="align-middle">Lugar de Nacimiento:</td>
+                <td className="align-middle">Ecuador, Guayaquil</td>
+              </tr>
+              <tr>
+                <td className="align-middle">Correos:</td>
+                <td className="align-middle">wasantac12349@gmail.com waltersantacruz@hotmail.es</td>
               </tr>
             </tbody>
           </Table>
@@ -70,8 +81,8 @@ const About = () => {
           <div className="text-center blanco my-3">
             Porcentaje de Avance Carrera
           </div>
-          <Progress animated color="danger" value="68">
-            68%
+          <Progress animated color="danger" value={value}>
+            80%
           </Progress>
         </Col>
       </Row>

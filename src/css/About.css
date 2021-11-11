@@ -1,31 +1,36 @@
-table{
-    empty-cells: hide;
+table {
+  empty-cells: hide;
 }
-tr,th,td{
-    text-align: center;
+tr,
+th,
+td {
+  text-align: center;
 }
-td,th{
-    color: white;
-    font-weight: bold;
-    
+td,
+th {
+  color: white;
+  font-weight: bold;
 }
-th{
-    font-size: large;
+th {
+  font-size: large;
 }
-.tabla{
-    background-color: #161a1d;
-    border-radius: 10px;
+
+.centrar {
+  vertical-align: center !important;
 }
-#titulo{
-    width: 100%;
-    white-space: nowrap;
-    border-bottom: 1px solid red;
-    column-fill: auto;
+.tabla {
+  background-color: #161a1d;
 }
-#contenedor{
-    margin-bottom: 200px;
-    margin-top: 3%;
+#titulo {
+  width: 100%;
+  white-space: nowrap;
+  border-bottom: 1px solid red;
+  column-fill: auto;
 }
-.subrayar{
-    border-bottom: 1px solid red;
+#contenedor {
+  margin-bottom: 200px;
+  margin-top: 3%;
+}
+.subrayar {
+  border-bottom: 1px solid red;
 }
